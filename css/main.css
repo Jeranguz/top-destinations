@@ -1,0 +1,85 @@
+@import url(./vars.css);
+
+body{
+    background: var(--clr-white);
+    text-align: center;
+}
+.main-section{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+.main-title{
+    font-family: var(--ff-main);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bd);
+}
+/* clase para el div que contiene todos los destinos */
+.elements{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 55vw;
+    margin: auto;
+    gap: 1rem; 
+}
+/* clase que continen todos los elementos de 1 solo destino */
+.destination-space{
+    display: grid;
+    margin: auto;
+    border-radius: 1.5rem;
+    box-shadow: 0rem 1rem 1rem 0rem var(--clr-black-shadow);
+}
+/* clase del div de la imagen */
+.image-div{
+    width: 19.625rem;
+    height: 20.5rem;
+    overflow: hidden;
+}
+/* clase de la imagen */
+.destination-image{
+    width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    display: block;
+}
+/* clase para el texto superior del destino */
+.destination-text{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    font-family: var(--ff-main);
+    font-weight:  var(--fw-md);
+    font-size: var(--fs-md);
+    color: var(--clr-purple);
+    padding: .5rem 1.5rem 0;
+}
+.place-text{
+    text-align: left;
+}
+.place-price{
+    text-align: right;
+}
+/* clase para el div de la imagen y texto inferior */
+.destination-days{
+    display: flex;
+    margin: 0;
+    padding: 0 1rem 2.2rem;
+    gap: 1rem;
+}
+/* clase para el texto inferior */
+.days-text{
+    margin: 0;
+    font-size: var(--fs-nm);
+    font-family: var(--ff-main);
+    font-weight: var(--fw-md);
+    color: var(--clr-purple);
+}
+
+@media (max-width: 767.98px){
+    .elements{
+        width: 80vw;
+    }
+    
+}
+
+
