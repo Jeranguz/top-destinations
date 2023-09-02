@@ -23,6 +23,10 @@ body{
     margin: auto;
     gap: 1rem; 
 }
+.a-element{
+    text-decoration: none;
+    margin: auto;
+}
 /* clase que continen todos los elementos de 1 solo destino */
 .destination-space{
     display: grid;
