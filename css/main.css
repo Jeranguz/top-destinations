@@ -4,12 +4,7 @@ body{
     background: var(--clr-white);
     text-align: center;
 }
-.main-section{
-    display: grid;
-    align-items: center;
-    align-content: center;
-    margin: auto;
-}
+
 .main-title{
     font-family: var(--ff-main);
     font-size: var(--fs-lg);
@@ -17,44 +12,45 @@ body{
 }
 /* clase para el div que contiene todos los destinos */
 .elements{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    width: 55vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem; 
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     margin: auto;
-    gap: 1rem; 
+    width: clamp(100px, 55vw, 500px);
 }
-.a-element{
-    text-decoration: none;
+.destination-btn{
     margin: auto;
+    text-decoration: none;
 }
 /* clase que continen todos los elementos de 1 solo destino */
 .destination-space{
-    display: grid;
-    margin: auto;
     border-radius: 1.5rem;
     box-shadow: 0rem 1rem 1rem 0rem var(--clr-black-shadow);
+    display: grid;
+    margin: auto;
 }
 /* clase del div de la imagen */
 .image-div{
-    width: 19.625rem;
     height: 20.5rem;
     overflow: hidden;
+    width: 19.625rem;
 }
 /* clase de la imagen */
 .destination-image{
-    width: 100%;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
     display: block;
+    width: 100%;
 }
 /* clase para el texto superior del destino */
 .destination-text{
+    color: var(--clr-purple);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     font-family: var(--ff-main);
     font-weight:  var(--fw-md);
     font-size: var(--fs-md);
-    color: var(--clr-purple);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     padding: .5rem 1.5rem 0;
 }
 .place-text{
@@ -66,22 +62,24 @@ body{
 /* clase para el div de la imagen y texto inferior */
 .destination-days{
     display: flex;
+    gap: 1rem;
     margin: 0;
     padding: 0 1rem 2.2rem;
-    gap: 1rem;
 }
 /* clase para el texto inferior */
 .days-text{
-    margin: 0;
+    color: var(--clr-purple);
     font-size: var(--fs-nm);
     font-family: var(--ff-main);
     font-weight: var(--fw-md);
-    color: var(--clr-purple);
+    margin: 0;
 }
 
 @media (max-width: 767.98px){
     .elements{
+        display: grid;
         width: 80vw;
+        
     }
     
 }
